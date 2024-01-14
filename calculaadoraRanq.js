@@ -1,51 +1,39 @@
-let vitorias = 150
-let derrotas = 50
-let soma= vitorias - derrotas;
 
 
-function resultado(){
+function resultado(vitoria, derrotas ){
+    
+   const saldoVitorias = vitoria - derrotas;
+    
     
 
+    if(vitoria <= 10 ) {
+        nivel = "ferro"
 
-    if(soma <= 10 ) {
-    console.log("ferro")
+    } else if (vitoria >=11 && vitoria <=20) {
+        nivel = "bronze"
 
-    } else if (soma>=11 && soma<=20) {
-        console.log("bronze")
+    } else if (vitoria >=21 && vitoria <=50) {
+        nivel = "prata"
 
-    } else if (soma>=21 && soma<=50) {
-        console.log("prata")
+    } else if (vitoria >=51 && vitoria <= 80) {
+        nivel = "ouro"
 
-    } else if (soma>=51 && soma <= 80) {
-        console.log("ouro")
+    } else if (vitoria >=81 && vitoria <= 90) {
+        nivel = "diamante"
 
-    } else if (soma>=81 && soma <= 90) {
-        console.log("diamante")
-
-    } else if (soma>=91 && soma <= 100) {
-        console.log("lendario")
+    } else if (vitoria >=91 && vitoria <= 100) {
+        nivel = "lendario"
                         
-    } else if (soma>=101) {
-        console.log("imortal")
+    } else if (vitoria >=101) {
+        nivel = "imortal"
 
     } else {
         console.log("nao encontrado")
 
     }
- 
-
-
-
-
-
-    
-
-
-
-
-
+    console.log(`O Herói tem um saldo de ${saldoVitorias} está no nível de ${nivel}`);
 
 }
 
 
-resultado();
+resultado(70,20);
