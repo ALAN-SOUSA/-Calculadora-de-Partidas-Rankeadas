@@ -33,19 +33,5 @@ function resultado(){
 
     }
  
-
-
-
-
-
-    
-
-
-
-
-
-
 }
-
-
 resultado();
