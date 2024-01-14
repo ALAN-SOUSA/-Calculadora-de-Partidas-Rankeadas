@@ -31,15 +31,10 @@ function resultado(vitoria, derrotas ){
         console.log("nao encontrado")
 
     }
-<<<<<<< HEAD
+
     console.log(`O Herói tem um saldo de ${saldoVitorias} está no nível de ${nivel}`);
 
 }
 
-
 resultado(70,20);
-=======
- 
-}
-resultado();
->>>>>>> 68513d4187e1d4b247241806dd5454a380d85a73
+
